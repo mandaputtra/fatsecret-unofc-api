@@ -1,35 +1,37 @@
 import { NowResponse } from "@vercel/node";
-import { startBrowser } from "../utils/browser"
+import nodeFetch from "node-fetch";
+import withRetry from "@vercel/fetch-retry";
+import cheerio from "cheerio";
+
+const fetch = withRetry(nodeFetch);
 
 export default async (_, response: NowResponse): Promise<void> => {
-
-  const isDev: boolean = process.env.NOW_REGION === "dev1"
-  const CHROMEPATH: string = process.env.CHROMIUM_PATH || ""
-  const browserInstance = await startBrowser(isDev, CHROMEPATH);
-  const page = await browserInstance.newPage();
-  await page.goto("https://www.fatsecret.co.id/kalori-gizi/");
-
-  interface MenuMakananUmum {
-    title: string | undefined | null,
-    desc: string | undefined | null,
+  interface MenuUmum {
+    title: string;
+    desc: string;
+    image: string;
   }
-  
-  // List Makanan Umum
-  const MakananUmum = await page.evaluate(() => {
-    const td = document.querySelectorAll("table.generic.common td")
-    let listMenu: MenuMakananUmum[] = []
-    td.forEach((menu) => {
-      let menuUmum: MenuMakananUmum = {
-        title: menu.querySelector("b")?.textContent,
-        desc: menu.querySelector(".smallText")?.textContent?.replace("lagi", "")
-      }
-      listMenu.push(menuUmum)
-    })
-    return listMenu
-  })
-  
+
+  const res = await fetch("https://www.fatsecret.co.id/kalori-gizi/");
+  const body = await res.text();
+
+  const $ = cheerio.load(body);
+  const menuUmum: MenuUmum[] = [];
+  $("table.generic.common td.borderBottom").each((_, elem: any) => {
+    const element = $(elem).children(".details");
+    const title = element.find("a.prominent").text();
+    const desc = element.find(".smallText").text().replace("lagi", "");
+    const image = $(elem).find("a > img").attr("src");
+    const menu: MenuUmum = {
+      title,
+      desc,
+      image,
+    };
+    menuUmum.push(menu);
+  });
+
   response.json({
-    data: MakananUmum,
+    data: menuUmum,
     message: "Success fetch api",
     success: true,
   });

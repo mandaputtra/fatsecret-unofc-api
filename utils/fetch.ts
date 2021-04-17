@@ -22,6 +22,11 @@ function generateParams (options: object): string {
 export async function fetchHTML (dest: String, params: object): Promise<string> {
   const url = `${BASE_URL}${dest}?${generateParams(params)}`
   const res = await fetch(url, { headers })
-  const body = await res.text()
-  return body
+  console.log(res.url)
+  if (res.url === 'https://www.fatsecret.co.id/Default.aspx') {
+    return 'Not Found'
+  } else {
+    const body = await res.text()
+    return body
+  }
 }

@@ -2,10 +2,15 @@ import { NowResponse, NowRequest } from '@vercel/node'
 import cheerio from 'cheerio'
 import { fetchHTML } from '../../utils/fetch'
 
+interface ServingList {
+  name: string;
+  calories: number;
+}
+
 interface FoundList {
   title: string;
   serving: string;
-  otherServing: string[];
+  otherServing: ServingList[];
   calories: number;
   fat: number;
   carbo: number;
@@ -14,6 +19,7 @@ interface FoundList {
 }
 
 interface DataResponse {
+  notes: string;
   items: FoundList[];
   next: number;
   prev: number;
@@ -50,13 +56,6 @@ export default async (
 
     const splitSection = normalizeText.split('Ukuran Lainnya:')
     const splitGeneralInfoString = splitSection[0].split('-')
-    // Search other serving method
-    let otherServing = []
-    if (splitSection[1]) {
-      const val = splitSection[1].split(',')
-      val.pop()
-      otherServing = val
-    }
     const generalInfo = splitGeneralInfoString[1].split('|')
     const calories = +generalInfo[0].replace(/Kalori:|kkal/g, '') || 0
     const fat = +generalInfo[1].replace(/Lemak:|g/g, '').replace(',', '.') || 0
@@ -64,6 +63,20 @@ export default async (
       +generalInfo[2].replace(/Karb:|g/g, '').replace(',', '.') || 0
     const protein =
       +generalInfo[3].replace(/Prot:|g/g, '').replace(',', '.') || 0
+    // Search other serving method
+    const otherServing: ServingList[] = []
+    if (splitSection[1]) {
+      const val = splitSection[1].split(',')
+      val.pop()
+
+      val.forEach((vl) => {
+        const normalize = vl.split('-')
+        otherServing.push({
+          name: normalize[0] ? normalize[0] : 'No Name',
+          calories: normalize[1] ? +normalize[1].replace('kkal', '') : 0
+        })
+      })
+    }
 
     items.push({
       title,
@@ -84,6 +97,7 @@ export default async (
   const next = endOfPage ? 0 : parseInt(page) + 1
   const prev = startOfPage ? 0 : parseInt(page) - 1
   const data: DataResponse = {
+    notes: 'The measurement used for protein, fat, carbo, are in g(gram)',
     items,
     total,
     prev,

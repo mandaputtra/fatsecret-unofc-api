@@ -10,20 +10,20 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/cheerio": "^0.22.22",
-    "@typescript-eslint/eslint-plugin": "^4.8.0",
-    "@typescript-eslint/parser": "^4.8.0",
-    "@vercel/node": "^1.8.4",
-    "eslint": "^7.13.0",
-    "eslint-config-standard": "^16.0.1",
+    "@types/cheerio": "^0.22.28",
+    "@typescript-eslint/eslint-plugin": "^4.22.0",
+    "@typescript-eslint/parser": "^4.22.0",
+    "@vercel/node": "^1.9.1",
+    "eslint": "^7.24.0",
+    "eslint-config-standard": "^16.0.2",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^4.2.1"
+    "eslint-plugin-promise": "^5.1.0"
   },
   "dependencies": {
     "@vercel/fetch-retry": "^5.0.3",
-    "cheerio": "^1.0.0-rc.3",
+    "cheerio": "^1.0.0-rc.6",
     "node-fetch": "^3.0.0-beta.9",
-    "qs": "^6.9.4"
+    "qs": "^6.10.1"
   }
 }

@@ -3,7 +3,7 @@ import withRetry from '@vercel/fetch-retry'
 import qs from 'qs'
 
 const fetch = withRetry(nodeFetch)
-const BASE_URL = 'https://www.fatsecret.co.id/'
+export const BASE_URL = 'https://www.fatsecret.co.id/'
 
 const headers = {
   'cache-control': 'no-cache',

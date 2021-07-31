@@ -1,9 +1,9 @@
-import { NowResponse, NowRequest } from '@vercel/node'
+import { VercelResponse, VercelRequest } from '@vercel/node'
 import { languanges } from '../utils/lang'
 
 export default async (
-  _request: NowRequest,
-  response: NowResponse
+  _request: VercelRequest,
+  response: VercelResponse
 ): Promise<void> => {
   response.json({
     supported_lang: languanges,

@@ -1,4 +1,4 @@
-import { NowResponse, NowRequest } from '@vercel/node'
+import { VercelResponse, VercelRequest } from '@vercel/node'
 import cheerio from 'cheerio'
 import { fetchHTML } from '../../../utils/fetch'
 import { getLang } from '../../../utils/lang'
@@ -28,21 +28,21 @@ interface DataResponse {
 }
 
 export default async (
-  request: NowRequest,
-  response: NowResponse
+  request: VercelRequest,
+  response: VercelResponse
 ): Promise<void> => {
   const query: any = request.query.query
   const page: any = +request.query.page || 0
   const langConfig = getLang(String(request.query.lang))
 
   if (!langConfig) {
-    response.json({
-      error: `${request.query.lang} are not supported, for now`
-    })
+    response.json({ error: `${request.query.lang} are not supported` })
+    return
   }
 
   if (!query) {
     response.json({ error: 'Please insert a query, q=??' })
+    return
   }
 
   const html = await fetchHTML(langConfig.searchUrl, {

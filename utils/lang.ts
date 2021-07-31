@@ -20,6 +20,7 @@ export const languanges: LanguageConfig[] = [
   }
 ]
 
-export function getLang (lang: string): LanguageConfig {
-  return languanges.filter((lg) => lg.lang === lang)[0]
+export function getLang (langCode: string): LanguageConfig | null {
+  const lang = languanges.filter((lg) => lg.lang === langCode)[0]
+  return lang || null
 }

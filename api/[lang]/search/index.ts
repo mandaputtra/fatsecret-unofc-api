@@ -63,12 +63,17 @@ export default async (
     const splitSection = normalizeText.split(langConfig.otherSizes)
     const splitGeneralInfoString = splitSection[0].split('-')
     const generalInfo = splitGeneralInfoString[1].split('|')
-    const calories = +generalInfo[0].replace(/Kalori:|kkal/g, '') || 0
-    const fat = +generalInfo[1].replace(/Lemak:|g/g, '').replace(',', '.') || 0
+
+    const calories = +generalInfo[0].replace(langConfig.measurementRegex.calories, '') || 0
+
+    const fat = +generalInfo[1].replace(langConfig.measurementRegex.fat, '').replace(',', '.') || 0
+
     const carbo =
-      +generalInfo[2].replace(/Karb:|g/g, '').replace(',', '.') || 0
+      +generalInfo[2].replace(langConfig.measurementRegex.carb, '').replace(',', '.') || 0
+
     const protein =
-      +generalInfo[3].replace(/Prot:|g/g, '').replace(',', '.') || 0
+      +generalInfo[3].replace(langConfig.measurementRegex.protein, '').replace(',', '.') || 0
+
     // Search other serving method
     const otherServing: ServingList[] = []
     if (splitSection[1]) {
@@ -79,7 +84,7 @@ export default async (
         const normalize = vl.split('-')
         otherServing.push({
           name: normalize[0] ? normalize[0] : 'No Name',
-          calories: normalize[1] ? +normalize[1].replace('kkal', '') : 0
+          calories: normalize[1] ? +normalize[1].replace(langConfig.caloriesPrefix, '') : 0
         })
       })
     }

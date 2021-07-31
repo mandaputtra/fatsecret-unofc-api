@@ -1,9 +1,5 @@
-import nodeFetch from 'node-fetch'
-import withRetry from '@vercel/fetch-retry'
+import got from 'got'
 import qs from 'qs'
-
-const fetch = withRetry(nodeFetch)
-export const BASE_URL = 'https://www.fatsecret.co.id/'
 
 const headers = {
   'cache-control': 'no-cache',
@@ -19,14 +15,11 @@ function generateParams (options: object): string {
   return params
 }
 
-export async function fetchHTML (dest: String, params: object): Promise<string> {
-  const url = `${BASE_URL}${dest}?${generateParams(params)}`
-  const res = await fetch(url, { headers })
-  console.log(res.url)
-  if (res.url === 'https://www.fatsecret.co.id/Default.aspx') {
-    return 'Not Found'
-  } else {
-    const body = await res.text()
-    return body
-  }
+export async function fetchHTML (
+  baseUrl: String,
+  params: object
+): Promise<string> {
+  const url = `${baseUrl}?${generateParams(params)}`
+  const res = await got.get(url, { headers, responseType: 'text' })
+  return res.body
 }

@@ -1,7 +1,10 @@
 {
     "name": "fatsecret-unofc-api",
     "version": "1.0.0",
-    "description": "",
+    "description": "Food Bank HTTP API, provide you with food information, calorie, fat, etc. Powered by Fat Secret webpage.",
+    "repository": {
+        "url": "https://github.com/mandaputtra/fatsecret-unofc-api"
+    },
     "main": "index.js",
     "scripts": {
         "start": "vercel dev",

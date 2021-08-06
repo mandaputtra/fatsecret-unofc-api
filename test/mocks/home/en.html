@@ -1,0 +1,902 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Foods</title>
+		<meta name="keywords" content="Food, calorie counter, nutritional information"/>
+		<meta name="description" content="Calorie Counter and Nutrition Information for foods"/>
+		<meta property="og:image" content="https://a.ftscrt.com/static/images/og_fatsecret.png"/>
+		<link rel="icon" href="/favicon.png" type="image/png"/>
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+		<link rel="apple-touch-icon" href="/touch-icon-iphone.png"/>
+		<link rel="apple-touch-icon" sizes="72x72" href="/touch-icon-ipad.png"/>
+		<link rel="apple-touch-icon" sizes="114x114" href="/touch-icon-iphone-retina.png"/>
+		<link rel="apple-touch-icon" sizes="144x144" href="/touch-icon-ipad-retina.png"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap">
+		<link rel="stylesheet" href="https://a.ftscrt.com/static/css/default_35.css" type="text/css"/>
+		<link rel="stylesheet" href="https://a.ftscrt.com/static/css/food/home.css" type="text/css"/><link rel="stylesheet" href="https://a.ftscrt.com/static/css/food/foodquicksearch_auto.css" type="text/css"/>
+		<script src="https://a.ftscrt.com/static/script/Chart-custom.js" type="text/javascript"></script>
+		<script src="https://a.ftscrt.com/static/script/jquery-1.7.2.min.js" type="text/javascript"></script>
+
+		<script src="https://a.ftscrt.com/static/script/quicksearchmenu_2.js" type="text/javascript"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+
+				$('#quickSearchMenu > li').click(
+				function(e){
+					var $targetul=$(this).children("ul:eq(0)");
+					if($targetul.hasClass("animated")){
+						$targetul.css('visibility', 'hidden');
+						$targetul.removeClass("animated");
+					}
+					else{
+						$targetul.css('visibility', 'visible');
+						$targetul.addClass("animated");
+						quicksearch_onclick();
+					}
+				});
+				$('#quickSearchMenu > li').hover(
+				function(e){
+				},
+				function(e){
+					var $targetul=$(this).children("ul:eq(0)")
+					$targetul.css('visibility', 'hidden');
+					$targetul.removeClass("animated")
+					quicksearch_onhoverout();
+				});
+
+			});
+			function onFSBoxItemClick(el) {
+				window.location.href = el.getElementsByTagName('a')[0].href;
+			}
+		</script>
+        <script type="application/ld+json">
+        {
+            "@context" : "https://schema.org",
+            "@type" : "Organization",
+            "name" : "FatSecret",
+            "alternateName" : "FatSecret - Calorie Counter and Diet Tracker for Weight Loss",
+            "url" : "https://www.fatsecret.com/",
+            "logo" : "https://a.ftscrt.com/static/images/def20/Fatsecret_logo.png",
+            "sameAs" : [
+                "https://www.facebook.com/fatsecret",
+                "https://www.twitter.com/fatsecret",
+                "https://www.linkedin.com/company/fatsecret/"
+            ]
+        }
+        </script>
+		<link rel="alternate" media="only screen and (max-width: 640px)" href="https://mobile.fatsecret.com/calories-nutrition/"><script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script><script>  var googletag = googletag || {};  googletag.cmd = googletag.cmd || [];</script><script> googletag.cmd.push(function() { googletag.defineSlot('/1083649/Local_Default_ATF_TopRight_728x90', [728, 90], 'div-gpt-ad-Local_Default_ATF_TopRight_728x90').addService(googletag.pubads());  googletag.defineSlot('/1083649/Local_Default_ATF_Right_300x250', [300, 250], 'div-gpt-ad-Local_Default_ATF_Right_300x250').addService(googletag.pubads());googletag.pubads().enableSingleRequest(); googletag.enableServices(); });</script>
+	</head>
+	<body>
+		<form method="post" action="../Diary.aspx?pa=foods" id="ctl00" style="margin:0px">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="bvo3i9OaGsgRBNS5n5VlyWL27b8M+9HzmvOqWTpIpyXC/lk6icKe6dxDNM8p09el5GcUesDcHnFoH9vX6tbwPZp9BXs=" />
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="AAFD0D3F" />
+</div>
+
+<div class="topBandLoggedOut">
+	<div class="centerContent topBand">
+	<div class="centerInnerContent">
+
+		<a style="font-weight:bold" href="/Auth.aspx?pa=r&ReturnUrl=https%3a%2f%2fwww.fatsecret.com%3a443%2fcalories-nutrition%2f" rel="nofollow">Register</a> &nbsp;|&nbsp; <a style="font-weight:bold" href="/Auth.aspx?pa=s&ReturnUrl=https%3a%2f%2fwww.fatsecret.com%3a443%2fcalories-nutrition%2f" rel="nofollow">Sign In</a>
+	</div>
+	</div>
+</div>
+
+
+			<div class="mainContent">
+				<div class="logoPanel">
+					<div class="centerContent">
+						<div class="centerInnerContent">
+							<div class="logoContent">
+
+<!--[if lte IE 7]>
+	<style type="text/css">
+		.logoContentB, .logoContentA {
+			display:inline-block;
+			vertical-align:middle;
+		}
+		.logoContentA {
+			width:100%;
+		}
+		.logoContentB {
+			height:100%;
+		}
+		.logoContentB, .logoContentA {
+			display:inline;
+		}
+	</style>
+<![endif]-->
+<div class="logoContentA" style="height:90px">
+<table class="menuLogo" cellpadding="0" cellspacing="0" >
+
+		<tr>
+			<td class="menuShortLogoCell"  style="padding-top:10px">
+				<a href="/Default.aspx"><img alt="FatSecret" src="https://a.ftscrt.com/static/images/def20/Fatsecret_logo.png" border="0" /></a>
+			</td>
+			<td align="right" rowspan="2">
+<div class="fs_advert">
+
+
+<div id='div-gpt-ad-Local_Default_ATF_TopRight_728x90' style='height:90px; width:728px;'>
+<script type="text/javascript">
+  googletag.cmd.push(function() { googletag.display('div-gpt-ad-Local_Default_ATF_TopRight_728x90'); });
+</script>
+</div>
+
+
+</div></td>
+		</tr>
+
+		<tr style="height:36px">
+			<td valign="bottom">
+
+<!--[if lte IE 7]>
+	<style type="text/css">
+		.quickSearchInput input {
+			margin-top:-1px;
+		}
+	</style>
+<![endif]-->
+<script type="text/javascript">
+	var multisearchurls = [
+		'/calories-nutrition/search?q=',
+		'/Default.aspx?pa=rs&recipe=',
+		'/calories-nutrition/meals?q=',
+		'/Diary.aspx?pa=as&activity=',
+		'/Community.aspx?pa=mems&user='
+	];
+
+	$(document).ready(function () {
+		var sIndex = document.getElementById('searchIndex');
+		sIndex.value = 0;
+		var multi = document.getElementById('multiSearchText');
+		multi.value = fatsecret_multiSearch_enterSearch;
+	});
+
+	function setSearchType(name, index){
+		var img = document.getElementById('searchTypeList');
+		img.src = 'https://a.ftscrt.com/static/images/def20/quicksearch/search_' + name + '.png';
+
+		var items = document.getElementById('quickSearchMenuItems').getElementsByTagName('li');
+		for (var i = 1; i < items.length; i++) {
+			if (!items[i].getElementsByTagName('a')[0])
+				continue;
+
+			items[i].getElementsByTagName('a')[0].removeAttribute('class');
+			items[i].getElementsByTagName('a')[0].removeAttribute('className');
+		}
+
+		var anc = document.getElementById('search_' + name);
+		anc.setAttribute('class', 'active');
+		anc.setAttribute('className', 'active');
+
+		var sIndex = document.getElementById('searchIndex');
+		sIndex.value = index;
+	}
+</script>
+<table cellpadding="0" cellspacing="0">
+	<tr>
+		<td>
+			<div class="quickSearchDropdown">
+				<ul id="quickSearchMenu">
+					<li>
+						<img id="searchTypeList" src="https://a.ftscrt.com/static/images/def20/quicksearch/search_foods.png"/>
+						<input type="hidden" id="searchIndex" value="0"/>
+						<ul id="quickSearchMenuItems" class="quickSearchDropdownPanel">
+							<li>
+								<div class="searchIn">Search in:</div>
+							</li>
+							<li onclick="setSearchType('foods', 0)">
+								<a id="search_foods" href="#" class="active" onclick="return false">
+									<div>&nbsp;</div>Foods
+								</a>
+							</li>
+							<li onclick="setSearchType('recipes', 1)">
+								<a id="search_recipes" href="#" onclick="return false">
+									<div>&nbsp;</div>Recipes
+								</a>
+							</li>
+							<li onclick="setSearchType('meals', 2)">
+								<a id="search_meals" href="#" onclick="return false">
+									<div>&nbsp;</div>Meals
+								</a>
+							</li>
+							<li onclick="setSearchType('exercises', 3)">
+								<a id="search_exercises" href="#" onclick="return false">
+									<div>&nbsp;</div>Exercises
+								</a>
+							</li>
+							<li onclick="setSearchType('members', 4)">
+								<a id="search_members" href="#" onclick="return false">
+									<div>&nbsp;</div>Members
+								</a>
+							</li>
+							<li style="height:10px">&nbsp;</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</td>
+		<td class="quickSearchInput" valign="top">
+			<div>
+				<input type="text" id="multiSearchText" style="width:157px" onkeydown="return multiSearchDowned(event, 'searchTypeList', 'multiSearchText')" class="searchInput" value="Enter search" onclick="multiOnClick(this)" onfocus="multiOnFocus(this)" onblur="multiOnBlur(this)" maxlength="50"/>
+			</div>
+		</td>
+		<td style="width:5px">
+			&nbsp;
+		</td>
+		<td valign="top">
+			<img src="https://a.ftscrt.com/static/images/def20/But_Search_Grey_default.png" onmouseover="this.src='https://a.ftscrt.com/static/images/def20/But_Search_Grey_pressed.png'" onmouseout="this.src='https://a.ftscrt.com/static/images/def20/But_Search_Grey_default.png'" onclick="multiSearch('searchTypeList', 'multiSearchText'); return false;"/>
+		</td>
+	</tr>
+</table>
+			</td>
+		</tr>
+
+</table>
+</div>
+<div class="logoContentB"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="menuContent">
+					<div class="centerContent">
+						<div class="centerInnerContent">
+
+<table cellpadding="0" cellspacing="0" class="menuBar">
+	<tr valign="bottom">
+		<td>
+			<div class="navigationDropdown">
+				<ul id="navigationMenu">
+
+					<li class="menuItem sepLeft">
+
+						<a title="My FatSecret" href="/Default.aspx?pa=m">My FatSecret</a>
+
+					</li>
+
+					<li class="menuItem highlight">
+						<div class="hLeft" style="float:left;height:28px;width:1px"></div>
+						<a title="Foods" href="/calories-nutrition/">Foods</a>
+						<div class="hRight" style="float:right;height:28px;width:1px;margin-top:-28px"></div>
+					</li>
+
+					<li class="menuItem">
+
+						<a title="Recipes" href="/Default.aspx?pa=recsh">Recipes</a>
+
+					</li>
+
+					<li class="menuItem sepLeft">
+
+						<a title="Challenges" href="/challenges/">Challenges</a>
+
+					</li>
+
+					<li class="menuItem sepLeft">
+
+						<a title="Fitness" href="/fitness/">Fitness</a>
+
+					</li>
+
+					<li class="menuItem sepLeft last">
+						<div class="last">
+						<a title="Community" href="/Community.aspx?pa=fms">Community</a>
+						</div>
+					</li>
+
+				</ul>
+			</div>
+		</td>
+	</tr>
+</table>
+						</div>
+					</div>
+				</div>
+				<div class="centerContent">
+					<div class="centerInnerContent">
+
+<div class="breadCrumb">
+
+				<div class="breadCrumb_home"><a href="/Default.aspx" onmouseover="document.bcfshome.src='https://a.ftscrt.com/static/images/def20/nav_breadcrumb_home_alt.png'" onmouseout="document.bcfshome.src='https://a.ftscrt.com/static/images/def20/nav_breadcrumb_home.png'"><img name="bcfshome" src="https://a.ftscrt.com/static/images/def20/nav_breadcrumb_home.png"/></a></div>
+				<div class="breadCrumb_sep"><img src="https://a.ftscrt.com/static/images/def20/nav_breadcrumb_seperator.png"/></div>
+				<div class="breadcrumb_noLink">Foods</div>
+
+</div>
+
+
+						<div id="content" class="mem">
+
+<table class="generic">
+	<tr valign="top">
+		<td class="leftCell">
+			<div class="leftCellContent">
+				<div class="TopLevelHeader food">
+					<h1>Foods</h1>
+					<div class="desc">Browse common foods and products from your favorite brands and restaurants.</div>
+				</div>
+				<br />
+				<div class="TopLevelHeaderSecondary">
+					<h2>Browse Common Foods</h2>
+				</div>
+				<br />
+				<table class="generic common">
+					<tr>
+							<td width="50%" class="borderBottom" valign="top">
+								<a href="/calories-nutrition/group/beans-and-legumes"><img src="https://a.ftscrt.com/static/images/food_groups/beans_legumes.jpg" border="0" alt="Beans &amp; Legumes"/></a>
+								<div class="details">
+								<a href="/calories-nutrition/group/beans-and-legumes" class="prominent"><b>Beans &amp; Legumes</b></a>
+								<div class="smallText">All types of beans and legumes like baked beans, green beans, refried beans and lentils.<br/><a href="/calories-nutrition/group/beans-and-legumes"><b>more</b></a></div>
+								</div>
+							</td>
+
+							<td width="50%" class="borderBottom" valign="top">
+								<a href="/calories-nutrition/group/beverages"><img src="https://a.ftscrt.com/static/images/food_groups/beverages.jpg" border="0" alt="Beverages"/></a>
+								<div class="details">
+								<a href="/calories-nutrition/group/beverages" class="prominent"><b>Beverages</b></a>
+								<div class="smallText">Hot and cold drinks like juices, soda, smoothies, coffee, beer, wine and cocktails.<br/><a href="/calories-nutrition/group/beverages"><b>more</b></a></div>
+								</div>
+							</td>
+							</tr><tr>
+							<td width="50%" class="borderBottom" valign="top">
+								<a href="/calories-nutrition/group/breads-and-cereals"><img src="https://a.ftscrt.com/static/images/food_groups/breads_cereals.jpg" border="0" alt="Breads &amp; Cereals"/></a>
+								<div class="details">
+								<a href="/calories-nutrition/group/breads-and-cereals" class="prominent"><b>Breads &amp; Cereals</b></a>
+								<div class="smallText">Different types of breads and cereals like bagels, tortillas, rye, wheat bread and oatmeal.<br/><a href="/calories-nutrition/group/breads-and-cereals"><b>more</b></a></div>
+								</div>
+							</td>
+
+							<td width="50%" class="borderBottom" valign="top">
+								<a href="/calories-nutrition/group/cheese-milk-and-dairy"><img src="https://a.ftscrt.com/static/images/food_groups/dairy.jpg" border="0" alt="Cheese, Milk &amp; Dairy"/></a>
+								<div class="details">
+								<a href="/calories-nutrition/group/cheese-milk-and-dairy" class="prominent"><b>Cheese, Milk &amp; Dairy</b></a>
+								<div class="smallText">Cheese varieties and dairy products like cheddar, mozzarella, provolone, skim milk and yogurt.<br/><a href="/calories-nutrition/group/cheese-milk-and-dairy"><b>more</b></a></div>
+								</div>
+							</td>
+							</tr><tr>
+							<td width="50%" class="borderBottom" valign="top">
+								<a href="/calories-nutrition/group/eggs"><img src="https://a.ftscrt.com/static/images/food_groups/eggs.jpg" border="0" alt="Eggs"/></a>
+								<div class="details">
+								<a href="/calories-nutrition/group/eggs" class="prominent"><b>Eggs</b></a>
+								<div class="smallText">Variety of plain and cooked eggs like, egg whites, hard-boiled, scrambled, fried and poached.<br/><a href="/calories-nutrition/group/eggs"><b>more</b></a></div>
+								</div>
+							</td>
+
+							<td width="50%" class="borderBottom" valign="top">
+								<a href="/calories-nutrition/group/fast-food"><img src="https://a.ftscrt.com/static/images/food_groups/fast_food.jpg" border="0" alt="Fast Food"/></a>
+								<div class="details">
+								<a href="/calories-nutrition/group/fast-food" class="prominent"><b>Fast Food</b></a>
+								<div class="smallText">Foods from all your favorite chains like burgers, fries, burritos, tacos, hot dogs and pizza.<br/><a href="/calories-nutrition/group/fast-food"><b>more</b></a></div>
+								</div>
+							</td>
+							</tr><tr>
+							<td width="50%" class="borderBottom" valign="top">
+								<a href="/calories-nutrition/group/fish-and-seafood"><img src="https://a.ftscrt.com/static/images/food_groups/fish.jpg" border="0" alt="Fish &amp; Seafood"/></a>
+								<div class="details">
+								<a href="/calories-nutrition/group/fish-and-seafood" class="prominent"><b>Fish &amp; Seafood</b></a>
+								<div class="smallText">A range of seafood and fish like shrimp, lobster, scallops, tuna, salmon, mahi mahi and tilapia.<br/><a href="/calories-nutrition/group/fish-and-seafood"><b>more</b></a></div>
+								</div>
+							</td>
+
+							<td width="50%" class="borderBottom" valign="top">
+								<a href="/calories-nutrition/group/fruit"><img src="https://a.ftscrt.com/static/images/food_groups/fruit.jpg" border="0" alt="Fruit"/></a>
+								<div class="details">
+								<a href="/calories-nutrition/group/fruit" class="prominent"><b>Fruit</b></a>
+								<div class="smallText">Popular fruits like apples, bananas, strawberries, oranges, grapes, peaches, pears and grapefruit.<br/><a href="/calories-nutrition/group/fruit"><b>more</b></a></div>
+								</div>
+							</td>
+							</tr><tr>
+							<td width="50%" class="borderBottom" valign="top">
+								<a href="/calories-nutrition/group/meat"><img src="https://a.ftscrt.com/static/images/food_groups/meat.jpg" border="0" alt="Meat"/></a>
+								<div class="details">
+								<a href="/calories-nutrition/group/meat" class="prominent"><b>Meat</b></a>
+								<div class="smallText">Full range of meats and cuts like bacon, ribs, chicken breast, pork chops, corned beef and roast turkey.<br/><a href="/calories-nutrition/group/meat"><b>more</b></a></div>
+								</div>
+							</td>
+
+							<td width="50%" class="borderBottom" valign="top">
+								<a href="/calories-nutrition/group/nuts-and-seeds"><img src="https://a.ftscrt.com/static/images/food_groups/nuts.jpg" border="0" alt="Nuts &amp; Seeds"/></a>
+								<div class="details">
+								<a href="/calories-nutrition/group/nuts-and-seeds" class="prominent"><b>Nuts &amp; Seeds</b></a>
+								<div class="smallText">Popular nuts and seeds like almonds, peanuts, pecans, pistachios, walnuts and sunflower seeds.<br/><a href="/calories-nutrition/group/nuts-and-seeds"><b>more</b></a></div>
+								</div>
+							</td>
+							</tr><tr>
+							<td width="50%" class="borderBottom" valign="top">
+								<a href="/calories-nutrition/group/pasta-rice-and-noodles"><img src="https://a.ftscrt.com/static/images/food_groups/pasta_rice.jpg" border="0" alt="Pasta, Rice &amp; Noodles"/></a>
+								<div class="details">
+								<a href="/calories-nutrition/group/pasta-rice-and-noodles" class="prominent"><b>Pasta, Rice &amp; Noodles</b></a>
+								<div class="smallText">All types of pasta and rice like spaghetti, macaroni, ravioli, lasagna, white rice and fried rice.<br/><a href="/calories-nutrition/group/pasta-rice-and-noodles"><b>more</b></a></div>
+								</div>
+							</td>
+
+							<td width="50%" class="borderBottom" valign="top">
+								<a href="/calories-nutrition/group/salads"><img src="https://a.ftscrt.com/static/images/food_groups/salads.jpg" border="0" alt="Salads"/></a>
+								<div class="details">
+								<a href="/calories-nutrition/group/salads" class="prominent"><b>Salads</b></a>
+								<div class="smallText">All your favorite salads like coleslaw, potato salad caesar salad, egg salad and chicken salad.<br/><a href="/calories-nutrition/group/salads"><b>more</b></a></div>
+								</div>
+							</td>
+							</tr><tr>
+							<td width="50%" class="borderBottom" valign="top">
+								<a href="/calories-nutrition/group/sauces-spices-and-spreads"><img src="https://a.ftscrt.com/static/images/food_groups/sauces.jpg" border="0" alt="Sauces, Spices &amp; Spreads"/></a>
+								<div class="details">
+								<a href="/calories-nutrition/group/sauces-spices-and-spreads" class="prominent"><b>Sauces, Spices &amp; Spreads</b></a>
+								<div class="smallText">All types of sauces and spices like ketchup, applesauce, pasta sauce, salsa, olive oil, mayo, salad dressing, hummus and maple syrup.<br/><a href="/calories-nutrition/group/sauces-spices-and-spreads"><b>more</b></a></div>
+								</div>
+							</td>
+
+							<td width="50%" class="borderBottom" valign="top">
+								<a href="/calories-nutrition/group/snacks"><img src="https://a.ftscrt.com/static/images/food_groups/snacks.jpg" border="0" alt="Snacks"/></a>
+								<div class="details">
+								<a href="/calories-nutrition/group/snacks" class="prominent"><b>Snacks</b></a>
+								<div class="smallText">Sweet and salty snacks like potato chips, tortilla chips, jerky, popcorn, pretzels, crackers, granola bars, trail mix and rice cakes.<br/><a href="/calories-nutrition/group/snacks"><b>more</b></a></div>
+								</div>
+							</td>
+							</tr><tr>
+							<td width="50%" class="borderBottom" valign="top">
+								<a href="/calories-nutrition/group/soups"><img src="https://a.ftscrt.com/static/images/food_groups/soup.jpg" border="0" alt="Soups"/></a>
+								<div class="details">
+								<a href="/calories-nutrition/group/soups" class="prominent"><b>Soups</b></a>
+								<div class="smallText">All types of soups like chili, gumbo, bisques, chowders, stews and broths.<br/><a href="/calories-nutrition/group/soups"><b>more</b></a></div>
+								</div>
+							</td>
+
+							<td width="50%" class="borderBottom" valign="top">
+								<a href="/calories-nutrition/group/sweets-candy-and-desserts"><img src="https://a.ftscrt.com/static/images/food_groups/sweets_desserts.jpg" border="0" alt="Sweets, Candy &amp; Desserts"/></a>
+								<div class="details">
+								<a href="/calories-nutrition/group/sweets-candy-and-desserts" class="prominent"><b>Sweets, Candy &amp; Desserts</b></a>
+								<div class="smallText">Sweet treats like candy, chocolate, cake, donuts, ice cream, pastries, muffins, pancakes and brownies.<br/><a href="/calories-nutrition/group/sweets-candy-and-desserts"><b>more</b></a></div>
+								</div>
+							</td>
+							</tr><tr>
+							<td width="50%" class="borderBottom" valign="top">
+								<a href="/calories-nutrition/group/vegetables"><img src="https://a.ftscrt.com/static/images/food_groups/vegetables.jpg" border="0" alt="Vegetables"/></a>
+								<div class="details">
+								<a href="/calories-nutrition/group/vegetables" class="prominent"><b>Vegetables</b></a>
+								<div class="smallText">All vegetables like mushrooms, carrots, potatoes, tomatoes, broccoli, lettuce, peas and onions.<br/><a href="/calories-nutrition/group/vegetables"><b>more</b></a></div>
+								</div>
+							</td>
+
+							<td width="50%" class="borderBottom" valign="top">
+								<a href="/calories-nutrition/group/other"><img src="https://a.ftscrt.com/static/images/food_groups/other.jpg" border="0" alt="Other"/></a>
+								<div class="details">
+								<a href="/calories-nutrition/group/other" class="prominent"><b>Other</b></a>
+								<div class="smallText">Popular foods like dumplings, croutons, chow mein, french toast, quiche, spring rolls and grits.<br/><a href="/calories-nutrition/group/other"><b>more</b></a></div>
+								</div>
+							</td>
+							</tr>
+				</table>
+
+<div class="manLinks">
+
+	<h2>Popular Food Brands</h2>
+<h3><a href="/Default.aspx?pa=brands&f=a&t=1">A</a></h3> <span class="link"><a href="/calories-nutrition/atkins">Atkins</a>,</span>  <span class="link"><a href="/calories-nutrition/anderson-erickson">Anderson Erickson</a>,</span>  <span class="link"><a href="/calories-nutrition/allens">Allens</a></span> <h3><a href="/Default.aspx?pa=brands&f=b&t=1">B</a></h3> <span class="link"><a href="/calories-nutrition/beatrice">Beatrice</a>,</span>  <span class="link"><a href="/calories-nutrition/bunny-bread">Bunny Bread</a>,</span>  <span class="link"><a href="/calories-nutrition/bear-naked">Bear Naked</a></span> <h3><a href="/Default.aspx?pa=brands&f=c&t=1">C</a></h3> <span class="link"><a href="/calories-nutrition/coors">Coors</a>,</span>  <span class="link"><a href="/calories-nutrition/claussen">Claussen</a>,</span>  <span class="link"><a href="/calories-nutrition/cape-cod">Cape Cod</a></span> <h3><a href="/Default.aspx?pa=brands&f=d&t=1">D</a></h3> <span class="link"><a href="/calories-nutrition/duncan-hines">Duncan Hines</a>,</span>  <span class="link"><a href="/calories-nutrition/dannon">Dannon</a>,</span>  <span class="link"><a href="/calories-nutrition/dempsters">Dempster&#39;s</a></span> <h3><a href="/Default.aspx?pa=brands&f=e&t=1">E</a></h3> <span class="link"><a href="/calories-nutrition/europes-best">Europe&#39;s Best</a>,</span>  <span class="link"><a href="/calories-nutrition/eas">EAS</a>,</span>  <span class="link"><a href="/calories-nutrition/egg-beaters">Egg Beaters</a></span> <h3><a href="/Default.aspx?pa=brands&f=f&t=1">F</a></h3> <span class="link"><a href="/calories-nutrition/ferrero">Ferrero</a>,</span>  <span class="link"><a href="/calories-nutrition/fage">Fage</a>,</span>  <span class="link"><a href="/calories-nutrition/ferrara-pan">Ferrara Pan</a></span> <h3><a href="/Default.aspx?pa=brands&f=g&t=1">G</a></h3> <span class="link"><a href="/calories-nutrition/glennys">Glenny&#39;s</a>,</span>  <span class="link"><a href="/calories-nutrition/gardein">Gardein</a>,</span>  <span class="link"><a href="/calories-nutrition/gwaltney">Gwaltney</a></span> <h3><a href="/Default.aspx?pa=brands&f=h&t=1">H</a></h3> <span class="link"><a href="/calories-nutrition/hillshire-farm">Hillshire Farm</a>,</span>  <span class="link"><a href="/calories-nutrition/hostess">Hostess</a>,</span>  <span class="link"><a href="/calories-nutrition/hot-pockets">Hot Pockets</a></span> <h3><a href="/Default.aspx?pa=brands&f=i&t=1">I</a></h3> <span class="link"><a href="/calories-nutrition/international-delight">International Delight</a>,</span>  <span class="link"><a href="/calories-nutrition/imagine-foods">Imagine Foods</a>,</span>  <span class="link"><a href="/calories-nutrition/idahoan-foods">Idahoan Foods</a></span> <h3><a href="/Default.aspx?pa=brands&f=j&t=1">J</a></h3> <span class="link"><a href="/calories-nutrition/jones-soda-company">Jones Soda</a>,</span>  <span class="link"><a href="/calories-nutrition/john-soules-foods">John Soules Foods</a>,</span>  <span class="link"><a href="/calories-nutrition/jamba-juice">Jamba Juice</a></span> <h3><a href="/Default.aspx?pa=brands&f=k&t=1">K</a></h3> <span class="link"><a href="/calories-nutrition/krusteaz">Krusteaz</a>,</span>  <span class="link"><a href="/calories-nutrition/kikkoman">Kikkoman</a>,</span>  <span class="link"><a href="/calories-nutrition/kens-steak-house">Ken&#39;s</a></span> <h3><a href="/Default.aspx?pa=brands&f=l&t=1">L</a></h3> <span class="link"><a href="/calories-nutrition/la-tortilla-factory">La Tortilla Factory</a>,</span>  <span class="link"><a href="/calories-nutrition/libbys">Libby&#39;s</a>,</span>  <span class="link"><a href="/calories-nutrition/lindt">Lindt</a></span> <h3><a href="/Default.aspx?pa=brands&f=m&t=1">M</a></h3> <span class="link"><a href="/calories-nutrition/miss-vickies">Miss Vickie&#39;s</a>,</span>  <span class="link"><a href="/calories-nutrition/marie-callenders">Marie Callender&#39;s</a>,</span>  <span class="link"><a href="/calories-nutrition/maries">Marie&#39;s</a></span> <h3><a href="/Default.aspx?pa=brands&f=n&t=1">N</a></h3> <span class="link"><a href="/calories-nutrition/natures-own">Nature&#39;s Own</a>,</span>  <span class="link"><a href="/calories-nutrition/necco">NECCO</a>,</span>  <span class="link"><a href="/calories-nutrition/newmans-own">Newman&#39;s Own</a></span> <h3><a href="/Default.aspx?pa=brands&f=f&t=1">F</a></h3> <span class="link"><a href="/calories-nutrition/newtons">Fig Newtons</a>,</span> <h3><a href="/Default.aspx?pa=brands&f=n&t=1">N</a></h3> <span class="link"><a href="/calories-nutrition/near-east">Near East</a>,</span>  <span class="link"><a href="/calories-nutrition/nong-shim">Nong Shim</a>,</span>  <span class="link"><a href="/calories-nutrition/natures-best">Nature&#39;s Best</a></span> <h3><a href="/Default.aspx?pa=brands&f=o&t=1">O</a></h3> <span class="link"><a href="/calories-nutrition/ocean-spray">Ocean Spray</a>,</span>  <span class="link"><a href="/calories-nutrition/omaha-steaks">Omaha Steaks</a>,</span>  <span class="link"><a href="/calories-nutrition/optimum-nutrition">Optimum Nutrition</a></span> <h3><a href="/Default.aspx?pa=brands&f=p&t=1">P</a></h3> <span class="link"><a href="/calories-nutrition/peter-pan">Peter Pan</a>,</span>  <span class="link"><a href="/calories-nutrition/pilgrims-pride">Pilgrim&#39;s Pride</a>,</span>  <span class="link"><a href="/calories-nutrition/pace">Pace</a></span> <h3><a href="/Default.aspx?pa=brands&f=q&t=1">Q</a></h3> <span class="link"><a href="/calories-nutrition/quaker">Quaker</a>,</span>  <span class="link"><a href="/calories-nutrition/quorn">Quorn</a>,</span> <h3><a href="/Default.aspx?pa=brands&f=r&t=1">R</a></h3> <span class="link"><a href="/calories-nutrition/rothbury-farms">Rothbury Farms</a>,</span>  <span class="link"><a href="/calories-nutrition/ro-tel">RoTel</a>,</span>  <span class="link"><a href="/calories-nutrition/reddi-wip">Reddi-wip</a></span> <h3><a href="/Default.aspx?pa=brands&f=s&t=1">S</a></h3> <span class="link"><a href="/calories-nutrition/sandw">S&amp;W</a>,</span>  <span class="link"><a href="/calories-nutrition/sunkist">Sunkist</a>,</span>  <span class="link"><a href="/calories-nutrition/smart-balance">Smart Balance</a></span> <h3><a href="/Default.aspx?pa=brands&f=t&t=1">T</a></h3> <span class="link"><a href="/calories-nutrition/tombstone">Tombstone</a>,</span>  <span class="link"><a href="/calories-nutrition/torani">Torani</a>,</span>  <span class="link"><a href="/calories-nutrition/the-greek-gods">The Greek Gods</a></span> <h3><a href="/Default.aspx?pa=brands&f=u&t=1">U</a></h3> <span class="link"><a href="/calories-nutrition/utz">Utz</a>,</span>  <span class="link"><a href="/calories-nutrition/uncle-bens">Uncle Ben&#39;s</a>,</span> <h3><a href="/Default.aspx?pa=brands&f=v&t=1">V</a></h3> <span class="link"><a href="/calories-nutrition/veggie-patch">Veggie Patch</a>,</span>  <span class="link"><a href="/calories-nutrition/veg-all">Veg-All</a>,</span>  <span class="link"><a href="/calories-nutrition/vienna-beef">Vienna Beef</a></span> <h3><a href="/Default.aspx?pa=brands&f=w&t=1">W</a></h3> <span class="link"><a href="/calories-nutrition/weight-watchers">Weight Watchers</a>,</span>  <span class="link"><a href="/calories-nutrition/wonder">Wonder</a>,</span>  <span class="link"><a href="/calories-nutrition/wholly-guacamole">Wholly Guacamole</a></span> <h3><a href="/Default.aspx?pa=brands&f=y&t=1">Y</a></h3> <span class="link"><a href="/calories-nutrition/yakult">Yakult</a>,</span>  <span class="link"><a href="/calories-nutrition/yoplait">Yoplait</a>,</span>  <span class="link"><a href="/calories-nutrition/yves-veggies">Yves Veggies</a></span> <h3><a href="/Default.aspx?pa=brands&f=z&t=1">Z</a></h3> <span class="link"><a href="/calories-nutrition/zatarains">Zatarain&#39;s</a>,</span>  <span class="link"><a href="/calories-nutrition/zone-perfect">Zone Perfect</a>,</span> ...
+	<hr/>
+	<div class="smallText more" align="right"><b><a href="/Default.aspx?pa=brands&t=1">find more popular food brands</a></b></div>
+</div>
+
+
+<div class="manLinks">
+
+	<h2>Restaurants &amp; Chains</h2>
+<h3><a href="/Default.aspx?pa=brands&f=a&t=2">A</a></h3> <span class="link"><a href="/calories-nutrition/auntie-annes-pretzels">Auntie Anne&#39;s Pretzels</a>,</span>  <span class="link"><a href="/calories-nutrition/atlanta-bread-company">Atlanta Bread Company</a>,</span>  <span class="link"><a href="/calories-nutrition/ac-larocco-pizzas">A.C. LaRocco Pizzas</a></span> <h3><a href="/Default.aspx?pa=brands&f=b&t=2">B</a></h3> <span class="link"><a href="/calories-nutrition/bonefish-grill">Bonefish Grill</a>,</span>  <span class="link"><a href="/calories-nutrition/brueggers">Bruegger&#39;s</a>,</span>  <span class="link"><a href="/calories-nutrition/brixx">Brixx</a></span> <h3><a href="/Default.aspx?pa=brands&f=c&t=2">C</a></h3> <span class="link"><a href="/calories-nutrition/costa-vida">Costa Vida</a>,</span>  <span class="link"><a href="/calories-nutrition/cotton-patch-cafe">Cotton Patch Cafe</a>,</span>  <span class="link"><a href="/calories-nutrition/carls-jr">Carl&#39;s Jr.</a></span> <h3><a href="/Default.aspx?pa=brands&f=d&t=2">D</a></h3> <span class="link"><a href="/calories-nutrition/daphnes-greek-cafe">Daphne&#39;s Greek Cafe</a>,</span>  <span class="link"><a href="/calories-nutrition/davannis">Davanni&#39;s</a>,</span>  <span class="link"><a href="/calories-nutrition/dickeys-barbecue">Dickey&#39;s Barbecue</a></span> <h3><a href="/Default.aspx?pa=brands&f=e&t=2">E</a></h3> <span class="link"><a href="/calories-nutrition/erbert-and-gerberts">Erbert &amp; Gerbert&#39;s</a>,</span>  <span class="link"><a href="/calories-nutrition/elephant-bar">Elephant Bar</a>,</span>  <span class="link"><a href="/calories-nutrition/earls">Earls</a></span> <h3><a href="/Default.aspx?pa=brands&f=f&t=2">F</a></h3> <span class="link"><a href="/calories-nutrition/famous-daves">Famous Dave&#39;s</a>,</span>  <span class="link"><a href="/calories-nutrition/flame-broiler">Flame Broiler</a>,</span>  <span class="link"><a href="/calories-nutrition/friendlys">Friendly&#39;s</a></span> <h3><a href="/Default.aspx?pa=brands&f=g&t=2">G</a></h3> <span class="link"><a href="/calories-nutrition/go-roma">Go Roma</a>,</span>  <span class="link"><a href="/calories-nutrition/golden-chick">Golden Chick</a>,</span>  <span class="link"><a href="/calories-nutrition/genghis-grill">Genghis Grill</a></span> <h3><a href="/Default.aspx?pa=brands&f=h&t=2">H</a></h3> <span class="link"><a href="/calories-nutrition/hometown-buffet">Hometown Buffet</a>,</span>  <span class="link"><a href="/calories-nutrition/houlihans">Houlihan&#39;s</a>,</span>  <span class="link"><a href="/calories-nutrition/heavenly-ham">Heavenly Ham</a></span> <h3><a href="/Default.aspx?pa=brands&f=i&t=2">I</a></h3> <span class="link"><a href="/calories-nutrition/ikea">Ikea</a>,</span>  <span class="link"><a href="/calories-nutrition/in-n-out">In-N-Out</a>,</span>  <span class="link"><a href="/calories-nutrition/ihop">IHOP</a></span> <h3><a href="/Default.aspx?pa=brands&f=j&t=2">J</a></h3> <span class="link"><a href="/calories-nutrition/jack-astors">Jack Astor&#39;s</a>,</span>  <span class="link"><a href="/calories-nutrition/jack-in-the-box">Jack in the Box</a>,</span>  <span class="link"><a href="/calories-nutrition/juice-stop">Juice Stop</a></span> <h3><a href="/Default.aspx?pa=brands&f=k&t=2">K</a></h3> <span class="link"><a href="/calories-nutrition/kolache-factory">Kolache Factory</a>,</span>  <span class="link"><a href="/calories-nutrition/king-taco">King Taco</a>,</span>  <span class="link"><a href="/calories-nutrition/kwik-trip">Kwik Trip</a></span> <h3><a href="/Default.aspx?pa=brands&f=l&t=2">L</a></h3> <span class="link"><a href="/calories-nutrition/logans-roadhouse">Logan&#39;s Roadhouse</a>,</span>  <span class="link"><a href="/calories-nutrition/little-caesars">Little Caesars</a>,</span>  <span class="link"><a href="/calories-nutrition/leeann-chin">Leeann Chin</a></span> <h3><a href="/Default.aspx?pa=brands&f=m&t=2">M</a></h3> <span class="link"><a href="/calories-nutrition/mimis-cafe">Mimis Cafe</a>,</span>  <span class="link"><a href="/calories-nutrition/manhattan-bagel">Manhattan Bagel</a>,</span>  <span class="link"><a href="/calories-nutrition/manchu-wok">Manchu Wok</a></span> <h3><a href="/Default.aspx?pa=brands&f=n&t=2">N</a></h3> <span class="link"><a href="/calories-nutrition/noahs">Noah&#39;s</a>,</span>  <span class="link"><a href="/calories-nutrition/noodles-and-company">Noodles &amp; Company</a>,</span>  <span class="link"><a href="/calories-nutrition/newks-express-cafe">Newk&#39;s Express Cafe</a></span> <h3><a href="/Default.aspx?pa=brands&f=o&t=2">O</a></h3> <span class="link"><a href="/calories-nutrition/on-the-border">On The Border</a>,</span>  <span class="link"><a href="/calories-nutrition/old-chicago">Old Chicago</a>,</span>  <span class="link"><a href="/calories-nutrition/orange-julius">Orange Julius</a></span> <h3><a href="/Default.aspx?pa=brands&f=p&t=2">P</a></h3> <span class="link"><a href="/calories-nutrition/pf-changs">P.F. Chang&#39;s</a>,</span>  <span class="link"><a href="/calories-nutrition/pollo-tropical">Pollo Tropical</a>,</span>  <span class="link"><a href="/calories-nutrition/pita-jungle">Pita Jungle</a></span> <h3><a href="/Default.aspx?pa=brands&f=q&t=2">Q</a></h3> <span class="link"><a href="/calories-nutrition/quiktrip">QuikTrip</a>,</span>  <span class="link"><a href="/calories-nutrition/qdoba-mexican-grill">Qdoba Mexican Grill</a>,</span>  <span class="link"><a href="/calories-nutrition/qt-kitchens">QT Kitchens</a></span> <h3><a href="/Default.aspx?pa=brands&f=r&t=2">R</a></h3> <span class="link"><a href="/calories-nutrition/runza">Runza</a>,</span>  <span class="link"><a href="/calories-nutrition/romanos-macaroni-grill">Romano&#39;s Macaroni Grill</a>,</span>  <span class="link"><a href="/calories-nutrition/roly-poly">Roly Poly</a></span> <h3><a href="/Default.aspx?pa=brands&f=s&t=2">S</a></h3> <span class="link"><a href="/calories-nutrition/saladworks">Saladworks</a>,</span>  <span class="link"><a href="/calories-nutrition/sharkys-woodfired-mexican-grill">Sharky&#39;s Woodfired Mexican Grill</a>,</span>  <span class="link"><a href="/calories-nutrition/shakeys">Shakey&#39;s</a></span> <h3><a href="/Default.aspx?pa=brands&f=t&t=2">T</a></h3> <span class="link"><a href="/calories-nutrition/tropical-smoothie-cafe">Tropical Smoothie Cafe</a>,</span>  <span class="link"><a href="/calories-nutrition/texas-roadhouse">Texas Roadhouse</a>,</span>  <span class="link"><a href="/calories-nutrition/tim-hortons">Tim Hortons</a></span> <h3><a href="/Default.aspx?pa=brands&f=u&t=2">U</a></h3> <span class="link"><a href="/calories-nutrition/ufood-grill">UFood Grill</a>,</span>  <span class="link"><a href="/calories-nutrition/uno-chicago-grill">Uno Chicago Grill</a>,</span> <h3><a href="/Default.aspx?pa=brands&f=w&t=2">W</a></h3> <span class="link"><a href="/calories-nutrition/waba-grill">Waba Grill</a>,</span>  <span class="link"><a href="/calories-nutrition/wendys">Wendy&#39;s</a>,</span>  <span class="link"><a href="/calories-nutrition/waffle-house">Waffle House</a></span> <h3><a href="/Default.aspx?pa=brands&f=y&t=2">Y</a></h3> <span class="link"><a href="/calories-nutrition/yoshinoya">Yoshinoya</a>,</span>  <span class="link"><a href="/calories-nutrition/yard-house">Yard House</a>,</span>  <span class="link"><a href="/calories-nutrition/yogurtland">Yogurtland</a></span> <h3><a href="/Default.aspx?pa=brands&f=z&t=2">Z</a></h3> <span class="link"><a href="/calories-nutrition/zoup!">Zoup!</a>,</span>  <span class="link"><a href="/calories-nutrition/zoes-kitchen">Zoe&#39;s Kitchen</a>,</span>  <span class="link"><a href="/calories-nutrition/zpizza">Zpizza</a></span> ...
+	<hr/>
+	<div class="smallText more" align="right"><b><a href="/Default.aspx?pa=brands&t=2">find more restaurants &amp; chains</a></b></div>
+</div>
+
+
+<div class="manLinks">
+
+	<h2>Supermarkets</h2>
+<h3><a href="/Default.aspx?pa=brands&f=a&t=3">A</a></h3> <span class="link"><a href="/calories-nutrition/americas-choice">America&#39;s Choice</a>,</span>  <span class="link"><a href="/calories-nutrition/albertsons">Albertsons</a>,</span>  <span class="link"><a href="/calories-nutrition/archer-farms">Archer Farms</a></span> <h3><a href="/Default.aspx?pa=brands&f=b&t=3">B</a></h3> <span class="link"><a href="/calories-nutrition/best-yet">Best Yet</a>,</span>  <span class="link"><a href="/calories-nutrition/best-choice">Best Choice</a>,</span> <h3><a href="/Default.aspx?pa=brands&f=c&t=3">C</a></h3> <span class="link"><a href="/calories-nutrition/compliments">Compliments</a>,</span>  <span class="link"><a href="/calories-nutrition/caseys">Casey&#39;s</a>,</span>  <span class="link"><a href="/calories-nutrition/cub-foods">Cub Foods</a></span> <h3><a href="/Default.aspx?pa=brands&f=e&t=3">E</a></h3> <span class="link"><a href="/calories-nutrition/eating-right">Eating Right</a>,</span> <h3><a href="/Default.aspx?pa=brands&f=f&t=3">F</a></h3> <span class="link"><a href="/calories-nutrition/fred-meyer">Fred Meyer</a>,</span>  <span class="link"><a href="/calories-nutrition/food-club">Food Club</a>,</span>  <span class="link"><a href="/calories-nutrition/fresh-and-easy">Fresh &amp; Easy</a></span> <h3><a href="/Default.aspx?pa=brands&f=g&t=3">G</a></h3> <span class="link"><a href="/calories-nutrition/giant-eagle">Giant Eagle</a>,</span>  <span class="link"><a href="/calories-nutrition/great-value">Great Value</a>,</span> <h3><a href="/Default.aspx?pa=brands&f=h&t=3">H</a></h3> <span class="link"><a href="/calories-nutrition/hannaford">Hannaford</a>,</span>  <span class="link"><a href="/calories-nutrition/heb">HEB</a>,</span>  <span class="link"><a href="/calories-nutrition/hy-vee">Hy-Vee</a></span> <h3><a href="/Default.aspx?pa=brands&f=j&t=3">J</a></h3> <span class="link"><a href="/calories-nutrition/jewel-osco">Jewel-Osco</a>,</span> <h3><a href="/Default.aspx?pa=brands&f=k&t=3">K</a></h3> <span class="link"><a href="/calories-nutrition/kirkwood">Kirkwood</a>,</span>  <span class="link"><a href="/calories-nutrition/kirkland-signature">Kirkland Signature</a>,</span>  <span class="link"><a href="/calories-nutrition/kroger">Kroger</a></span> <h3><a href="/Default.aspx?pa=brands&f=m&t=3">M</a></h3> <span class="link"><a href="/calories-nutrition/master-choice">Master Choice</a>,</span>  <span class="link"><a href="/calories-nutrition/market-pantry">Market Pantry</a>,</span>  <span class="link"><a href="/calories-nutrition/meijer">Meijer</a></span> <h3><a href="/Default.aspx?pa=brands&f=n&t=3">N</a></h3> <span class="link"><a href="/calories-nutrition/no-name">No Name</a>,</span> <h3><a href="/Default.aspx?pa=brands&f=o&t=3">O</a></h3> <span class="link"><a href="/calories-nutrition/our-family">Our Family</a>,</span>  <span class="link"><a href="/calories-nutrition/old-dutch">Old Dutch</a>,</span> <h3><a href="/Default.aspx?pa=brands&f=p&t=3">P</a></h3> <span class="link"><a href="/calories-nutrition/publix">Publix</a>,</span>  <span class="link"><a href="/calories-nutrition/private-selection">Private Selection</a>,</span>  <span class="link"><a href="/calories-nutrition/pathmark">Pathmark</a></span> <h3><a href="/Default.aspx?pa=brands&f=r&t=3">R</a></h3> <span class="link"><a href="/calories-nutrition/roundys">Roundy&#39;s</a>,</span>  <span class="link"><a href="/calories-nutrition/raleys">Raley&#39;s</a>,</span>  <span class="link"><a href="/calories-nutrition/ralphs">Ralphs</a></span> <h3><a href="/Default.aspx?pa=brands&f=s&t=3">S</a></h3> <span class="link"><a href="/calories-nutrition/stater-bros">Stater Bros.</a>,</span>  <span class="link"><a href="/calories-nutrition/shop-n-save">Shop &#39;n Save</a>,</span>  <span class="link"><a href="/calories-nutrition/schnucks">Schnucks</a></span> <h3><a href="/Default.aspx?pa=brands&f=t&t=3">T</a></h3> <span class="link"><a href="/calories-nutrition/trader-joes">Trader Joe&#39;s</a>,</span> <h3><a href="/Default.aspx?pa=brands&f=w&t=3">W</a></h3> <span class="link"><a href="/calories-nutrition/wawa">Wawa</a>,</span>  <span class="link"><a href="/calories-nutrition/winn-dixie">Winn-Dixie</a>,</span>  <span class="link"><a href="/calories-nutrition/whole-foods-market">Whole Foods Market</a></span> ...
+	<hr/>
+	<div class="smallText more" align="right"><b><a href="/Default.aspx?pa=brands&t=3">find more supermarkets</a></b></div>
+</div>
+
+			</div>
+		</td>
+		<td class="rightCell">
+			<div class="rightCellContent">
+
+<script type="text/javascript" src="https://a.ftscrt.com/static/script/foodquicksearch_auto.js"></script>
+<!--
+<script type="text/javascript">
+	function getAutoSuggestionUrl(exp){
+		return 'https://auto.fatsecret.com/?m=1&l=1&query=' + exp + '&fn=autoComplete';
+	}
+	function doFoodSearch(exp){
+		window.location.href = '/calories-nutrition/search?q=' + encodeURIComponent(exp);
+	}
+	setFQSInput('ctl08_ctl04');
+
+	function ctl08_ctl04_foodSearchDowned(evt){
+		if(evt.keyCode == 13){
+			ctl08_ctl04_foodSearch();
+			return false;
+		}
+		return true;
+	}
+	function ctl08_ctl04_foodSearch(){
+		var exp = document.getElementById('ctl08_ctl04_ByFood').value;
+		if(exp == 'Enter search') exp = '';
+		window.location.href = '/calories-nutrition/search?q=' + encodeURIComponent(exp);
+	}
+	function ctl08_ctl04_OnClick(el){
+		if(el.style.color != '#000000' && el.style.color != 'rgb(0, 0, 0)'){
+			el.value='';
+			el.style.color='#000000';
+		}
+		else
+		{
+			if(navigator.userAgent.indexOf('Chrome') != -1 || navigator.userAgent.indexOf('Apple') != -1)
+				el.select();
+		}
+	}
+	function ctl08_ctl04_OnFocus(el){
+		if(el.style.color == '#000000' || el.style.color == 'rgb(0, 0, 0)'){
+			if(!(navigator.userAgent.indexOf('Chrome') != -1 || navigator.userAgent.indexOf('Apple') != -1))
+				el.select();
+		}
+	}
+	function ctl08_ctl04_OnBlur(el){
+		if(el.value==''){
+			el.value='Enter search';
+			el.style.color='#BFC3C2';
+		}
+	}
+</script>-->
+<div class="quickSearchMiddle">
+	<table class="generic" cellpadding="0" cellspacing="0">
+		<tr>
+			<td>
+				<div class="title">Food Search</div>
+			</td>
+		</tr>
+		<tr style="height:42px">
+			<td>
+				<div>
+					<input type="text" class="searchinput" id="ctl08_ctl04_ByFood" value="Enter search" onkeyup="onSearchInputKeyUp(event)" onkeydown="onSearchInputKeyDown(event)" onclick="ctl08_ctl04_OnClick(this)" onfocus="ctl08_ctl04_OnFocus(this)" onblur="ctl08_ctl04_OnBlur(this)" autocomplete="off" maxlength="50"/>
+					<img src="https://a.ftscrt.com/static/images/def20/But_Search_Blue_default.png" onmouseover="this.src='https://a.ftscrt.com/static/images/def20/But_Search_Blue_pressed.png'" onmouseout="this.src='https://a.ftscrt.com/static/images/def20/But_Search_Blue_default.png'" onclick="ctl08_ctl04_foodSearch()" style="padding-left:5px"  title="search for nutritional information"/>
+				</div>
+				<img id="fqs_autosuggest_arrow" src="https://a.ftscrt.com/static/images/foodadd/FA_SearchBox_Arrow_blue_2.png" width="17" height="10" style="position:absolute;padding-left:20px;display:none" />
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<table id="fqs_autosuggest" cellspacing="0" cellpadding="0" style="width:100%;background-color:#fff;margin-bottom:2px;display:none">
+					<tr>
+						<td class="fqs_faacrs">
+							<table cellpadding="0" cellspacing="0" style="width:100%">
+								<tr class onmouseover="onAutoSuggestMouseOver(0)" onmouseout="onAutoSuggestMouseOut()">
+									<td class="fqs_faacrw" id="fqs_faacrw_0" onclick="onAutoSuggestClick(this)"><div></div></td>
+								</tr>
+								<tr class onmouseover="onAutoSuggestMouseOver(1)" onmouseout="onAutoSuggestMouseOut()">
+									<td class="fqs_faacrw" id="fqs_faacrw_1" onclick="onAutoSuggestClick(this)"><div></div></td>
+								</tr>
+								<tr class onmouseover="onAutoSuggestMouseOver(2)" onmouseout="onAutoSuggestMouseOut()">
+									<td class="fqs_faacrw" id="fqs_faacrw_2" onclick="onAutoSuggestClick(this)"><div></div></td>
+								</tr>
+								<tr class onmouseover="onAutoSuggestMouseOver(3)" onmouseout="onAutoSuggestMouseOut()">
+									<td class="fqs_faacrw" id="fqs_faacrw_3" onclick="onAutoSuggestClick(this)"><div></div></td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</div>
+
+				<br />
+
+<div class="fs_advert">
+<div class="advertising">
+
+<div id='div-gpt-ad-Local_Default_ATF_Right_300x250' style='height:250px; width:300px;'>
+<script type="text/javascript">
+  googletag.cmd.push(function() { googletag.display('div-gpt-ad-Local_Default_ATF_Right_300x250'); });
+</script>
+</div>
+
+</div>
+</div>
+
+<table class="greybox">
+
+	<tr>
+		<td class="content">
+<h2 class="boxed" style="position:relative"><img src="https://a.ftscrt.com/static/images/box/mealsicon.gif" style="vertical-align:middle;"/>Member Meals</h2>
+<!-- div class="smallText" style="margin-bottom:5px">recently popular foods eaten by FatSecret members</div -->
+
+			<h3 class="boxed padded">Breakfast:</h3>
+			<table class="generic" style="margin-top:2px">
+
+				<tr valign="middle">
+					<td width="10"><img src="https://a.ftscrt.com/static/images/icons/myfs_cir.gif" width="6" height="6" style="vertical-align:middle" border="0"/></td>
+					<td class="smallText">
+					<a href="/member/ecm2008/meals/691/blueberry+shake">blueberry shake</a>
+					</td>
+				</tr>
+
+				<tr valign="middle">
+					<td width="10"><img src="https://a.ftscrt.com/static/images/icons/myfs_cir.gif" width="6" height="6" style="vertical-align:middle" border="0"/></td>
+					<td class="smallText">
+					<a href="/member/rrobinson/meals/2265/breakfast+burrito">breakfast burrito</a>
+					</td>
+				</tr>
+
+				<tr valign="middle">
+					<td width="10"><img src="https://a.ftscrt.com/static/images/icons/myfs_cir.gif" width="6" height="6" style="vertical-align:middle" border="0"/></td>
+					<td class="smallText">
+					<a href="/member/Lotus/meals/131/Poach+it+Mom+PuhLEEEZE!">Poach it Mom PuhLEEEZE!</a>
+					</td>
+				</tr>
+
+			</table>
+
+			<h3 class="boxed padded">Lunch:</h3>
+			<table class="generic" style="margin-top:2px">
+
+				<tr valign="middle">
+					<td width="10"><img src="https://a.ftscrt.com/static/images/icons/myfs_cir.gif" width="6" height="6" style="vertical-align:middle" border="0"/></td>
+					<td class="smallText">
+					<a href="/member/mkcc/meals/5441/Turkey+Sandwich+on+Wheat+with+Mustard+and+Mayo">Turkey Sandwich on Wheat with Mustard and Mayo</a>
+					</td>
+				</tr>
+
+				<tr valign="middle">
+					<td width="10"><img src="https://a.ftscrt.com/static/images/icons/myfs_cir.gif" width="6" height="6" style="vertical-align:middle" border="0"/></td>
+					<td class="smallText">
+					<a href="/member/LK1998/meals/1611/Cranberry+Walnut+Salad">Cranberry Walnut Salad</a>
+					</td>
+				</tr>
+
+				<tr valign="middle">
+					<td width="10"><img src="https://a.ftscrt.com/static/images/icons/myfs_cir.gif" width="6" height="6" style="vertical-align:middle" border="0"/></td>
+					<td class="smallText">
+					<a href="/member/taymar316/meals/2619/Peanut+Butter+and+Jelly+Sandwich">Peanut Butter and Jelly Sandwich</a>
+					</td>
+				</tr>
+
+			</table>
+
+			<h3 class="boxed padded">Dinner:</h3>
+			<table class="generic" style="margin-top:2px">
+
+				<tr valign="middle">
+					<td width="10"><img src="https://a.ftscrt.com/static/images/icons/myfs_cir.gif" width="6" height="6" style="vertical-align:middle" border="0"/></td>
+					<td class="smallText">
+					<a href="/member/echoness/meals/6988/Falafel+Gyro">Falafel Gyro</a>
+					</td>
+				</tr>
+
+				<tr valign="middle">
+					<td width="10"><img src="https://a.ftscrt.com/static/images/icons/myfs_cir.gif" width="6" height="6" style="vertical-align:middle" border="0"/></td>
+					<td class="smallText">
+					<a href="/member/mendacity22/meals/22043/Quesadilla">Quesadilla</a>
+					</td>
+				</tr>
+
+				<tr valign="middle">
+					<td width="10"><img src="https://a.ftscrt.com/static/images/icons/myfs_cir.gif" width="6" height="6" style="vertical-align:middle" border="0"/></td>
+					<td class="smallText">
+					<a href="/member/dylanbiles/meals/21477/Tomato+and+Pepper+Salad">Tomato and Pepper Salad</a>
+					</td>
+				</tr>
+
+			</table>
+
+			<h3 class="boxed padded">Snacks/Other:</h3>
+			<table class="generic" style="margin-top:2px">
+
+				<tr valign="middle">
+					<td width="10"><img src="https://a.ftscrt.com/static/images/icons/myfs_cir.gif" width="6" height="6" style="vertical-align:middle" border="0"/></td>
+					<td class="smallText">
+					<a href="/member/nsampson37/meals/1253/Flax+Machine">Flax Machine</a>
+					</td>
+				</tr>
+
+				<tr valign="middle">
+					<td width="10"><img src="https://a.ftscrt.com/static/images/icons/myfs_cir.gif" width="6" height="6" style="vertical-align:middle" border="0"/></td>
+					<td class="smallText">
+					<a href="/member/Lotus/meals/116/Protein+Banana+Strawberry+Power+Shake">Protein Banana Strawberry Power Shake</a>
+					</td>
+				</tr>
+
+				<tr valign="middle">
+					<td width="10"><img src="https://a.ftscrt.com/static/images/icons/myfs_cir.gif" width="6" height="6" style="vertical-align:middle" border="0"/></td>
+					<td class="smallText">
+					<a href="/member/Evenstar/meals/539/Szechuan+Leftovers">Szechuan Leftovers</a>
+					</td>
+				</tr>
+
+			</table>
+
+<div align="right" class="smallText" style="margin-top:5px"><b><a href="/calories-nutrition/meals">find more meals</a></b></div>
+
+		</td>
+	</tr>
+
+</table>
+
+				<br />
+
+<table class="greybox">
+
+	<tr>
+		<td class="content">
+					<h2 class="boxed" style="position:relative"><img src="https://a.ftscrt.com/static/images/box/activity_multiadd.gif" style="vertical-align:middle;"/> Recently Popular Foods</h2>
+
+						<table class="generic" style="margin-top:5px">
+
+							<tr valign="">
+								<td width="18"><img src="https://a.ftscrt.com/static/images/icons/eatenwith_b.png" class="eatenwith" border="0"/></td>
+								<td class="borderBottom">
+								<a href="/calories-nutrition/silver-hills/organic-sprouted-power-bagels">Silver Hills Organic Sprouted Power Bagels</a>
+								</td>
+							</tr>
+
+							<tr valign="">
+								<td width="18"><img src="https://a.ftscrt.com/static/images/icons/eatenwith_b.png" class="eatenwith" border="0"/></td>
+								<td class="borderBottom">
+								<a href="/calories-nutrition/wellsley-farms/lightly-seasoned-asian-medley">Wellsley Farms Lightly Seasoned Asian Medley</a>
+								</td>
+							</tr>
+
+							<tr valign="">
+								<td width="18"><img src="https://a.ftscrt.com/static/images/icons/eatenwith_b.png" class="eatenwith" border="0"/></td>
+								<td class="borderBottom">
+								<a href="/calories-nutrition/trader-joes/strawberry-jalape%C3%B1o-crisps">Trader Joe&#39;s Strawberry &amp; Jalape&#241;o Crisps</a>
+								</td>
+							</tr>
+
+							<tr valign="">
+								<td width="18"><img src="https://a.ftscrt.com/static/images/icons/eatenwith_b.png" class="eatenwith" border="0"/></td>
+								<td class="borderBottom">
+								<a href="/calories-nutrition/sainsburys/greek-style-natural-yogurt">Sainsbury&#39;s Greek Style Natural Yogurt</a>
+								</td>
+							</tr>
+
+							<tr valign="">
+								<td width="18"><img src="https://a.ftscrt.com/static/images/icons/eatenwith_b.png" class="eatenwith" border="0"/></td>
+								<td class="borderBottom">
+								<a href="/calories-nutrition/jojos/guilt-free-chocolate-goes-hawaiian">Jojo&#39;s Guilt-Free Chocolate Goes Hawaiian</a>
+								</td>
+							</tr>
+
+							<tr valign="">
+								<td width="18"><img src="https://a.ftscrt.com/static/images/icons/eatenwith_b.png" class="eatenwith" border="0"/></td>
+								<td class="borderBottom">
+								<a href="/calories-nutrition/finaflex/oatmeal-protein-pie-double-chocolate-chip">Finaflex Oatmeal Protein Pie Double Chocolate Chip</a>
+								</td>
+							</tr>
+
+							<tr valign="">
+								<td width="18"><img src="https://a.ftscrt.com/static/images/icons/eatenwith_b.png" class="eatenwith" border="0"/></td>
+								<td class="borderBottom">
+								<a href="/calories-nutrition/hill-country-fare/trail-mix-fruit-nut">Hill Country Fare Trail Mix Fruit &amp; Nut</a>
+								</td>
+							</tr>
+
+							<tr valign="">
+								<td width="18"><img src="https://a.ftscrt.com/static/images/icons/eatenwith_b.png" class="eatenwith" border="0"/></td>
+								<td class="borderBottom">
+								<a href="/calories-nutrition/enlightened/ice-cream-cake">Enlightened Ice Cream Cake</a>
+								</td>
+							</tr>
+
+							<tr valign="">
+								<td width="18"><img src="https://a.ftscrt.com/static/images/icons/eatenwith_b.png" class="eatenwith" border="0"/></td>
+								<td class="borderBottom">
+								<a href="/calories-nutrition/speedy-choice/jalapeno-popper-cheese-curls">Speedy Choice Jalapeno Popper Cheese Curls</a>
+								</td>
+							</tr>
+
+							<tr valign="">
+								<td width="18"><img src="https://a.ftscrt.com/static/images/icons/eatenwith_b.png" class="eatenwith" border="0"/></td>
+								<td class="borderBottom">
+								<a href="/calories-nutrition/hungry-root/cherry-chia-on-the-go-oats">Hungry Root Cherry Chia on-The-Go-Oats</a>
+								</td>
+							</tr>
+
+						</table>
+
+		</td>
+	</tr>
+
+</table>
+
+			</div>
+		</td>
+	</tr>
+</table>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footerPanel" align="right">
+
+<div class="topPanel">
+    <div class="top">Get the app</div>
+    <a target="blank" href="https://itunes.apple.com/us/app/calorie-counter-by-fatsecret/id347184248?mt=8">
+	    <img src="https://a.ftscrt.com/static/images/mobi/ios/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" height="40"/>
+    </a>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <a target="blank" href="https://play.google.com/store/apps/details?id=com.fatsecret.android">
+	    <img src="https://a.ftscrt.com/static/images/mobi/android/en_get_2.svg" height="40"/>
+    </a>
+</div>
+<div class="middlePanel">
+    <div class="social">
+        <a target="blank" href="https://www.facebook.com/FatSecret">
+            <img src="https://a.ftscrt.com/static/images/social/but_social_facebook.svg" width="40"/>
+        </a>
+        <a target="blank" href="https://www.instagram.com/fatsecret_app/">
+            <img src="https://a.ftscrt.com/static/images/social/but_social_instagram.svg" width="40"/>
+        </a>
+        <a target="blank" href="https://www.twitter.com/FatSecret">
+            <img src="https://a.ftscrt.com/static/images/social/but_social_twitter.svg" width="40"/>
+        </a>
+    </div>
+    <div class="top">
+        <a href="/Default.aspx?pa=toc">food list</a>
+        <a href="/Default.aspx?pa=brands">brand list</a>
+        <a target="blank" href="https://platform.fatsecret.com">platform</a>
+        <a target="blank" href="https://professional.fatsecret.com">professional</a>
+        <a href="/Default.aspx?pa=cu">contact</a>
+    </div>
+    <div class="bottom">
+        <a href="/Default.aspx?pa=tyf">find people</a>
+        <span class="sep">|</span>
+        <a href="/Default.aspx?pa=faq">faq</a>
+        <span class="sep">|</span>
+        <a target="blank" href="http://blog.fatsecret.com">blog</a>
+        <span class="sep">|</span>
+        <a href="/Default.aspx?pa=tnc">terms</a>
+        <span class="sep">|</span>
+        <a href="/Default.aspx?pa=priv">privacy</a>
+        <span class="sep">|</span>
+        <a href="/Default.aspx?pa=ra">report abuse</a>
+    </div>
+</div>
+<div class="bottomPanel">
+    <div class="centerContent">
+        <div class="centerInnerContent">
+            <span>&copy; 2021 FatSecret. All rights reserved.</span>
+            <div class="other">
+
+                <a href="/Default.aspx?pa=sites" class="white sectionLink">
+	                <span style="line-height:26px;vertical-align:top;padding-right:5px">United States</span>
+	                <img src="https://a.ftscrt.com/static/images/markets/smallFlags/US.png" height="26" width="27"/>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+			</div>
+		</form>
+
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-716779-1']);
+		_gaq.push(['_setCustomVar', 1, 'member-name', 'Guest', 1]);
+		_gaq.push(['_trackPageview']);
+
+		(function () {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+
+	</body>
+</html>

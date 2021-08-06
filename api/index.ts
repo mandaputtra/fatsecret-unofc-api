@@ -6,7 +6,10 @@ export default async (
   response: VercelResponse
 ): Promise<void> => {
   response.json({
-    supported_lang: languanges,
+    supported_lang: languanges.map(l => ({
+      lang: l.lang,
+      url: l.searchUrl
+    })),
     repo: 'https://github.com/mandaputtra/fatsecret-unofc-api',
     credits: ['fatsecret.com', 'vercel.sh']
   })

@@ -43,3 +43,10 @@ To make your language _plugin_ you could add to the settings [here](./utils/lang
   otherSizes: 'this are text that you will find 2 lines under the food name after you search food'
 }
 ```
+
+## Development
+
+```
+$ npm i -g vercel
+$ vercel start
+```

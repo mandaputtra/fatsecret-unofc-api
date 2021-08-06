@@ -32,6 +32,8 @@ export default async (
   request: VercelRequest,
   response: VercelResponse
 ): Promise<void> => {
+  const url = request.headers['x-forwarded-host']
+  const proto = request.headers['x-forwarded-proto']
   const query: any = request.query.query
   const page: any = +request.query.page || 0
   const langConfig = getLang(String(request.query.lang))
@@ -100,7 +102,7 @@ export default async (
       calories,
       otherServing,
       serving: splitGeneralInfoString[0],
-      detailLink: encodeURIComponent(detailLink)
+      detailLink: `${proto}://${url}/api/${langConfig.lang}/detail?url=${encodeURIComponent(detailLink)}`
     })
   })
 

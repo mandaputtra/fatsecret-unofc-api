@@ -36,7 +36,7 @@ export const languanges: LanguageConfig[] = [
       carb: /Karb:|g/g,
       protein: /Prot:|g/g,
       fat: /Lemak:|g/g,
-      calories: /Kalori:|kcal/g
+      calories: /Kalori:|kkal/g
     }
   }
 ]

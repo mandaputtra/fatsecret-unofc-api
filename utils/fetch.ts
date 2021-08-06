@@ -16,10 +16,10 @@ function generateParams (options: object): string {
 }
 
 export async function fetchHTML (
-  baseUrl: String,
+  uri: String,
   params: object
 ): Promise<string> {
-  const url = `${baseUrl}?${generateParams(params)}`
+  const url = `${uri}?${generateParams(params)}`
   const res = await got.get(url, { headers, responseType: 'text' })
   return res.body
 }

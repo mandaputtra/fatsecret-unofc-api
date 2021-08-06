@@ -1,5 +1,6 @@
 interface LanguageConfig {
   lang: string;
+  baseUrl: string;
   menuUrl: string;
   searchUrl: string;
   otherSizes: string;
@@ -15,7 +16,8 @@ interface LanguageConfig {
 export const languanges: LanguageConfig[] = [
   {
     lang: 'en',
-    menuUrl: 'https://www.fatsecret.com/calories-nutrition/',
+    baseUrl: 'https://www.fatsecret.com',
+    menuUrl: 'https://www.fatsecret.com/calories-nutrition',
     searchUrl: 'https://www.fatsecret.com/calories-nutrition/search',
     otherSizes: 'Other sizes:',
     caloriesPrefix: 'kcal',
@@ -28,7 +30,8 @@ export const languanges: LanguageConfig[] = [
   },
   {
     lang: 'id',
-    menuUrl: 'https://www.fatsecret.co.id/kalori-gizi/',
+    baseUrl: 'https://www.fatsecret.co.id',
+    menuUrl: 'https://www.fatsecret.co.id/kalori-gizi',
     searchUrl: 'https://www.fatsecret.co.id/kalori-gizi/search',
     otherSizes: 'Ukuran Lainnya:',
     caloriesPrefix: 'kkal',

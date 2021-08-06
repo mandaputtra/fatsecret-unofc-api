@@ -16,6 +16,7 @@ interface FoundList {
   fat: number;
   carbo: number;
   protein: number;
+  detailLink: string;
 }
 
 interface DataResponse {
@@ -54,7 +55,9 @@ export default async (
 
   $('table.generic.searchResult td.borderBottom').each((_, elem: any) => {
     const element = $(elem)
-    const title = element.find('a.prominent').text()
+    const title = element.find('a.prominent')
+    const linkText = title.text()
+    const detailLink = title.attr('href')
     const normalizeText = element
       .find('div.smallText.greyText.greyLink')
       .text()
@@ -90,13 +93,14 @@ export default async (
     }
 
     items.push({
-      title,
+      title: linkText,
       protein,
       fat,
       carbo,
       calories,
       otherServing,
-      serving: splitGeneralInfoString[0]
+      serving: splitGeneralInfoString[0],
+      detailLink: encodeURIComponent(detailLink)
     })
   })
 

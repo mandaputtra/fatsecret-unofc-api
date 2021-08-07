@@ -1,35 +1,37 @@
 {
-    "name": "fatsecret-unofc-api",
-    "version": "1.0.0",
-    "description": "Food Bank HTTP API, provide you with food information, calorie, fat, etc. Powered by Fat Secret webpage.",
-    "repository": {
-        "url": "https://github.com/mandaputtra/fatsecret-unofc-api"
-    },
-    "main": "index.js",
-    "scripts": {
-        "start": "vercel dev",
-        "deploy": "vercel",
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "devDependencies": {
-        "@types/cheerio": "^0.22.30",
-        "@types/qs": "^6.9.7",
-        "@typescript-eslint/eslint-plugin": "^4.28.5",
-        "@typescript-eslint/parser": "^4.28.5",
-        "@vercel/node": "^1.11.1",
-        "eslint": "^7.32.0",
-        "eslint-config-standard": "^16.0.3",
-        "eslint-plugin-import": "^2.23.4",
-        "eslint-plugin-node": "^11.1.0",
-        "eslint-plugin-promise": "^5.1.0",
-        "prettier": "^2.3.2"
-    },
-    "dependencies": {
-        "cheerio": "^1.0.0-rc.10",
-        "got": "^11.8.2",
-        "qs": "^6.10.1"
-    }
+  "name": "fatsecret-unofc-api",
+  "version": "1.0.0",
+  "description": "Food Bank HTTP API, provide you with food information, calorie, fat, etc. Powered by Fat Secret webpage.",
+  "repository": {
+    "url": "https://github.com/mandaputtra/fatsecret-unofc-api"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "vercel dev",
+    "deploy": "vercel",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cheerio": "^0.22.30",
+    "@types/lru-cache": "^5.1.1",
+    "@types/qs": "^6.9.7",
+    "@typescript-eslint/eslint-plugin": "^4.29.0",
+    "@typescript-eslint/parser": "^4.28.5",
+    "@vercel/node": "^1.11.1",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-config-standard-with-typescript": "^20.0.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.3.1",
+    "prettier": "^2.3.2"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.10",
+    "got": "^11.8.2",
+    "qs": "^6.10.1"
+  }
 }

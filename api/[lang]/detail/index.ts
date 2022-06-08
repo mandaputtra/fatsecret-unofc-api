@@ -112,14 +112,13 @@ export default async (
       | "lif"
       | "sodyum"
   ) {
-    const vb =
+    const vb: any =
       item.replace(langConfig.detailRegex[type], "").replace(",", ".").trim() ||
       0;
 
-     return Number(vb / 100).toFixed(4);
+    return Number(vb / 100).toFixed(4);
 
     //return vb;
-
   }
 
   /*  $("div.nutrient.black.right.tRight").each((_, elem: any) => {

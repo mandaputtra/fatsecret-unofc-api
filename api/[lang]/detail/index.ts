@@ -16,6 +16,7 @@ export default async (
   const page: any = +request.query.page || 0;
   const portionamount = request.query.portionamount;
   const portionid = request.query.portionid;
+  const isGr = request.query.isGram ? true : false;
 
   if (!langConfig) {
     response.json({ error: `${request.query.lang} are not supported` });
@@ -32,7 +33,6 @@ export default async (
   }
 
   let _url = langConfig.baseUrl + detailUrl;
-  console.log("ss", _url);
   const html = await fetchHTML(_url, {
     portionamount,
     portionid,
@@ -40,7 +40,6 @@ export default async (
   });
 
   const $ = cheerio.load(html);
-  //console.log("ss2", html);
   let items: any = {};
 
   $("div.nutrient.left").each((_, elem: any) => {
@@ -117,7 +116,10 @@ export default async (
       item.replace(langConfig.detailRegex[type], "").replace(",", ".").trim() ||
       0;
 
-    return vb;
+     return Number(vb / 100).toFixed(4);
+
+    //return vb;
+
   }
 
   /*  $("div.nutrient.black.right.tRight").each((_, elem: any) => {

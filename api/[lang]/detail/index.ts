@@ -3,11 +3,18 @@ import { fetchHTML } from "../../../utils/fetch";
 import { getLang } from "../../../utils/lang";
 import cheerio from "cheerio";
 import { parse, stringify } from "qs";
-
+import NextCors from "nextjs-cors";
 export default async (
   request: VercelRequest,
   response: VercelResponse
 ): Promise<void> => {
+  await NextCors(request, response, {
+    // Options
+    methods: ["GET", "HEAD", "PUT", "PATCH", "POST", "DELETE"],
+    origin: "*",
+    optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
+  });
+
   const langConfig = getLang(String(request.query.lang));
   const detailUrl = request.query.url;
   const url = request.headers["x-forwarded-host"];

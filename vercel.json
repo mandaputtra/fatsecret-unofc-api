@@ -1,13 +1,13 @@
 {
   "rewrites": [
     {
-      "source": "https://fatsecret-unofc-api-nu.vercel.app/api/:match*",
-      "destination": "/api/:match*"
+      "source": "/api/:match*",
+      "destination": "https://fatsecret-unofc-api-nu.vercel.app/api/:match*"
     }
   ],
   "headers": [
     {
-      "source": "/api/(.*)",
+      "source": "*",
       "headers": [
         { "key": "Access-Control-Allow-Credentials", "value": "true" },
         { "key": "Access-Control-Allow-Origin", "value": "*" },

@@ -1,8 +1,8 @@
 {
   "rewrites": [
     {
-      "source": "/api/:match*",
-      "destination": "https://fatsecret-unofc-api-nu.vercel.app/api/:match*"
+      "source": "https://fatsecret-unofc-api-nu.vercel.app/api/:match*",
+      "destination": "/api/:match*"
     }
   ],
   "headers": [

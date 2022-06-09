@@ -129,8 +129,9 @@ export default async (
     const vb: any =
       item.replace(langConfig.detailRegex[type], "").replace(",", ".").trim() ||
       0;
+    const x = Number(vb / 100);
 
-    return Number(vb / 100).toFixed(4);
+    return Math.round(x * 100) / 100;
 
     //return vb;
   }

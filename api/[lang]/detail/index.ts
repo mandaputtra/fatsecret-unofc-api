@@ -49,12 +49,19 @@ export default async (
   const $ = cheerio.load(html);
   let items: any = {};
 
+  $("div.summarypanelcontent").each((_, elem: any) => {
+    const element = $(elem);
+    const x = element.find("h1").text();
+    if (x) {
+      items["food"] = x;
+    }
+  });
+
   $("div.nutrient.left").each((_, elem: any) => {
     const element = $(elem);
     const normalizeText = element.text().replace(/(\r\n|\n|\r\t|\t|\r)/gm, "");
     let item;
     const nextELem = element.next().text();
-    console.log("normali", normalizeText);
 
     switch (normalizeText) {
       case "Enerji":

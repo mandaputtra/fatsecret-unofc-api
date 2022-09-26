@@ -41,7 +41,22 @@ export const languanges: LanguageConfig[] = [
       fat: /Lemak:|g/g,
       calories: /Kalori:|kkal/g
     }
-  }
+  },
+  {
+    lang: 'tr',
+    baseUrl: 'https://www.fatsecret.com.tr',
+    menuUrl: 'https://www.fatsecret.com.tr/kaloriler-beslenme',
+    searchUrl: 'https://www.fatsecret.com.tr/kaloriler-beslenme/search',
+    otherSizes: 'Other sizes:',
+    caloriesPrefix: 'kcal',
+    measurementRegex: {
+      carb: /Karb:|g/g,
+      protein: /Prot:|g/g,
+      fat: /Yağ:|g/g,
+      calories: /Kal:|kcal/g
+    }
+  },
+
 ]
 
 export function getLang (langCode: string): LanguageConfig | null {

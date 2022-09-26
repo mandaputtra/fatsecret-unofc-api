@@ -47,7 +47,7 @@ export const languanges: LanguageConfig[] = [
     baseUrl: 'https://www.fatsecret.com.tr',
     menuUrl: 'https://www.fatsecret.com.tr/kaloriler-beslenme',
     searchUrl: 'https://www.fatsecret.com.tr/kaloriler-beslenme/search',
-    otherSizes: 'Other sizes:',
+    otherSizes: 'Diğer Boyutlar:',
     caloriesPrefix: 'kcal',
     measurementRegex: {
       carb: /Karb:|g/g,
